@@ -14,8 +14,10 @@ def main():
     ZoneInfo(args.timezone)
     name = html.escape(args.name, quote=True)
     page = ROOT / 'pokemon-sleep/index.html'
-    text = page.read_text().replace('my collection', name).replace('My Pokémon', name + '’s Pokémon')
+    text = page.read_text().replace('my field notes', name).replace('My Pokémon', name + '’s Pokémon')
     page.write_text(text)
+    homepage = ROOT / 'index.html'
+    homepage.write_text(homepage.read_text().replace('My Pokémon', name + '’s Pokémon'))
     exporter = ROOT / 'scripts/export-sleep-roster.py'
     # This token appears exactly once in the unconfigured template.
     text = re.sub(r'ZoneInfo\([^)]*\)', lambda _: 'ZoneInfo(' + repr(args.timezone) + ')', exporter.read_text())

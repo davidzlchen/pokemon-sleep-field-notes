@@ -1,6 +1,6 @@
-# Create the user's own Pokémon Sleep repository
+# Create the user's own Pokémon Sleep Field Notes
 
-Read README.md first. Work toward a verified local collection and, when the user
+Read README.md first. Work toward a verified local Field Notes site and, when the user
 asks to publish, a repository and website owned by that user.
 
 1. Clone/copy this template into a new directory. Preserve unrelated files.

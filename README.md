@@ -1,13 +1,13 @@
-# Pokémon Sleep Repository
+# Pokémon Sleep Field Notes
 
-Turn your own Pokémon Sleep collection into a searchable website with ingredients,
-subskills, XP progress, supplies, historical snapshots, and links to individual helpers.
+Create your own Pokémon Sleep Field Notes: a personal research journal with a searchable
+Pokémon box, ingredients, subskills, XP progress, supplies, and saved snapshots.
 Built to be used with Claude Code or Codex. No frontend framework or dependencies; Vercel publishes a public-only static build.
 
 **Start by giving your agent this prompt:**
 
-> Read https://github.com/davidzlchen/pokemon-sleep-repository and follow its
-> AGENTS.md. Create my own Pokémon Sleep repository using this template. Show me
+> Read https://github.com/davidzlchen/pokemon-sleep-field-notes and follow its
+> AGENTS.md. Create my own Pokémon Sleep Field Notes site using this template. Show me
 > the local demo first, then help me import my own data. Keep all captures,
 > credentials, and raw account responses private. Ask for my public display name
 > and timezone. Verify the collection before helping me publish it.
@@ -20,7 +20,7 @@ v3.8.2 client revision; it is not an official Pokémon Sleep export API.
 
 ## Host it on Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdavidzlchen%2Fpokemon-sleep-repository&project-name=my-pokemon-sleep&repository-name=my-pokemon-sleep)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdavidzlchen%2Fpokemon-sleep-field-notes&project-name=my-pokemon-sleep-field-notes&repository-name=my-pokemon-sleep-field-notes)
 
 This opens Vercel’s setup flow to copy the template into your own Git account and
 host the fictional demo. Sign in, choose a repository name, and deploy. Then point
@@ -33,8 +33,8 @@ The button does not connect to your game account or upload any credentials.
 Requires Python 3.11+; Node.js is needed for the JavaScript checks and deployment build.
 
 ```sh
-git clone https://github.com/davidzlchen/pokemon-sleep-repository.git
-cd pokemon-sleep-repository
+git clone https://github.com/davidzlchen/pokemon-sleep-field-notes.git
+cd pokemon-sleep-field-notes
 python3 -m http.server 8765
 ```
 
@@ -95,6 +95,10 @@ Unknown mappings remain unavailable/reviewable. Some skill defaults come from
 community species references and are marked accordingly. Reference data is a
 snapshot of master version 134, not a guarantee of compatibility with future updates.
 
+The live [original Field Notes](https://davidzlchen.com/pokemon-sleep/) also displays
+island milestones and researcher rank. Those additions are not yet included in this
+template. Automated progress comparisons and investment recommendations are future work.
+
 ## What is not included
 
 No original player data, captures, tokens, certificates, native game binaries,
@@ -104,7 +108,7 @@ that setup is **not** bundled or claimed as ready for other accounts.
 
 ## Credits
 
-[Original collection](https://davidzlchen.com/pokemon-sleep/) ·
+[David’s Field Notes](https://davidzlchen.com/pokemon-sleep/) ·
 [Build story](https://davidzlchen.com/blog/pokemon-sleep-repository/) ·
 [PokéAPI sprites](https://github.com/PokeAPI/sprites) ·
 [Neroli's Lab](https://github.com/nerolis-lab/nerolis-lab) ·
