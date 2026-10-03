@@ -4,6 +4,9 @@ Create your own Pokémon Sleep Field Notes: a personal research journal with a s
 Pokémon box, ingredients, subskills, XP progress, supplies, and saved snapshots.
 Built to be used with Claude Code or Codex. No frontend framework or dependencies; Vercel publishes a public-only static build.
 
+[Explore David’s Field Notes](https://davidzlchen.com/pokemon-sleep/) ·
+[Read the launch post: Building Pokémon Sleep Field Notes](https://davidzlchen.com/blog/pokemon-sleep-repository/)
+
 **Start by giving your agent this prompt:**
 
 > Read https://github.com/davidzlchen/pokemon-sleep-field-notes and follow its
@@ -71,6 +74,7 @@ python3 -m unittest discover -s scripts -p 'test_*sleep*.py'
 python3 -m unittest discover -s scripts -p test_map_api_roster.py
 node scripts/test_sleep_search.cjs
 node scripts/test_sleep_assets.cjs
+node scripts/test_sleep_history.cjs
 ```
 
 Only publish the static site: `index.html` and `pokemon-sleep/`. Vercel runs `node scripts/build_site.cjs` and serves only `public-site/`, which
@@ -84,6 +88,8 @@ own and review `git diff --cached` before publishing. See [agent instructions](A
 
 - A static collection browser with search, specialty/shiny filters, sorting,
   helper details, supplies, and snapshot-pinned share links.
+- A styled saved-entry journal menu above the overview, with newest-first history,
+  Latest and selected markers, keyboard dismissal, and failed-load preservation.
 - Offline mapping from game IDs to English names, species-specific XP curves,
   unlock levels, main-skill bonuses/caps, minted natures, and special Mythical slots.
 - Explicit allowlist exports: no raw responses, session values, account IDs,
@@ -109,7 +115,7 @@ that setup is **not** bundled or claimed as ready for other accounts.
 ## Credits
 
 [David’s Field Notes](https://davidzlchen.com/pokemon-sleep/) ·
-[Build story](https://davidzlchen.com/blog/pokemon-sleep-repository/) ·
+[Launch post](https://davidzlchen.com/blog/pokemon-sleep-repository/) ·
 [PokéAPI sprites](https://github.com/PokeAPI/sprites) ·
 [Neroli's Lab](https://github.com/nerolis-lab/nerolis-lab) ·
 [RaenonX](https://pks.raenonx.cc/en/item/overview).
