@@ -8,8 +8,9 @@ terms of those sources for your own distribution/use.
 Sources reused from the original public site:
 - Pokémon / Pokémon Sleep game names and master reference data (master v134).
 - PokéAPI sprites: https://github.com/PokeAPI/sprites
-- Neroli's Lab species definitions/icons: https://github.com/nerolis-lab/nerolis-lab
+- Neroli's Lab species definitions/icons/island artwork: https://github.com/nerolis-lab/nerolis-lab
 - RaenonX item images: https://pks.raenonx.cc/en/item/overview
   File-level source URLs/checksums are in pokemon-sleep/assets/inventory-sources.json.
+- Island artwork sources/checksums: pokemon-sleep/assets/island-sources.json.
 
 No original account snapshot, session material, native binary, or CA is bundled.

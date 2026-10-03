@@ -1,5 +1,32 @@
 {
   "captured_at": "2000-01-01",
+  "island_bests": [
+    {
+      "name": "Greengrass Isle",
+      "strength": 7171,
+      "rank": "Basic 3",
+      "area_bonus_percent": 10.0
+    },
+    {
+      "name": "Cyan Beach",
+      "strength": 11090,
+      "rank": "Basic 3",
+      "area_bonus_percent": 15.0
+    },
+    {
+      "name": "Taupe Hollow",
+      "strength": 15835,
+      "rank": "Basic 3",
+      "area_bonus_percent": 20.0
+    },
+    {
+      "name": "Snowdrop Tundra",
+      "strength": 24118,
+      "rank": "Basic 3",
+      "area_bonus_percent": 5.0
+    }
+  ],
+  "researcher_rank": 3,
   "dream_shards": 0,
   "entries": [],
   "pokemon_candies": {}

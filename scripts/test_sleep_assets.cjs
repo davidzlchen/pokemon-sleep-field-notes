@@ -46,3 +46,12 @@ for (const source of sources.files) {
     assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), source.sha256, source.file);
 }
 console.log(`Verified ${sources.files.length} candy/item artwork checksums and inventory name coverage.`);
+
+const islands = JSON.parse(fs.readFileSync(path.join(root, 'assets/island-sources.json')));
+for (const source of islands.files) {
+    const bytes = fs.readFileSync(path.join(root, 'assets', source.file));
+    assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', source.file);
+    assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), source.sha256, source.file);
+}
+assert.equal(islands.files.length, 7);
+console.log('All seven island artwork files and source checksums verified.');

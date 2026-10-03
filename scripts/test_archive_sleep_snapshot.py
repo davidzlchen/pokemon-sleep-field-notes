@@ -34,6 +34,12 @@ class ArchiveTest(unittest.TestCase):
         self.assertEqual(original, (self.root / 'snapshots' / f'{first}.json').read_bytes())
         self.assertEqual(len(json.loads((self.root / 'history.json').read_text())['snapshots']), 2)
 
+    def test_island_private_fields_rejected(self):
+        self.inventory['island_bests'][0]['account_id'] = 'must not publish'
+        self.write()
+        with self.assertRaises(ValueError):
+            archive.archive(self.root)
+
     def test_mismatch_and_private_fields_rejected(self):
         self.inventory['captured_at'] = '2026-10-01'
         self.write()

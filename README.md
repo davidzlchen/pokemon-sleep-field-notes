@@ -1,7 +1,8 @@
 # Pokémon Sleep Field Notes
 
 Create your own Pokémon Sleep Field Notes: a personal research journal with a searchable
-Pokémon box, ingredients, subskills, XP progress, supplies, and saved snapshots.
+Pokémon box, ingredients, subskills, XP progress, island milestones, researcher rank,
+supplies, and saved snapshots.
 Built to be used with Claude Code or Codex. No frontend framework or dependencies; Vercel publishes a public-only static build.
 
 [Explore David’s Field Notes](https://davidzlchen.com/pokemon-sleep/) ·
@@ -41,8 +42,9 @@ cd pokemon-sleep-field-notes
 python3 -m http.server 8765
 ```
 
-Open http://localhost:8765/pokemon-sleep/. The included helper is **fictional demo
-data dated January 1, 2000**, not David's collection. No account access is needed.
+Open http://localhost:8765/pokemon-sleep/. The included helper, four island records,
+and researcher rank are **fictional demo data dated January 1, 2000**, not David's
+collection. No account access is needed.
 
 ## Make it yours
 
@@ -90,6 +92,8 @@ own and review `git diff --cached` before publishing. See [agent instructions](A
   helper details, supplies, and snapshot-pinned share links.
 - A styled saved-entry journal menu above the overview, with newest-first history,
   Latest and selected markers, keyboard dismissal, and failed-load preservation.
+- Illustrated island cards with recorded best Snorlax Strength, rank, and area bonus;
+  researcher rank derived from the captured research EXP. Missing fields remain unavailable.
 - Offline mapping from game IDs to English names, species-specific XP curves,
   unlock levels, main-skill bonuses/caps, minted natures, and special Mythical slots.
 - Explicit allowlist exports: no raw responses, session values, account IDs,
@@ -101,9 +105,10 @@ Unknown mappings remain unavailable/reviewable. Some skill defaults come from
 community species references and are marked accordingly. Reference data is a
 snapshot of master version 134, not a guarantee of compatibility with future updates.
 
-The live [original Field Notes](https://davidzlchen.com/pokemon-sleep/) also displays
-island milestones and researcher rank. Those additions are not yet included in this
-template. Automated progress comparisons and investment recommendations are future work.
+The template includes the same Field Notes layout, island artwork, helper browser,
+supplies, researcher-rank display, and journal picker as the original site. It uses
+fictional data and generic owner branding; share links point to your own deployment.
+Automated progress comparisons and investment recommendations are still future work.
 
 ## What is not included
 
