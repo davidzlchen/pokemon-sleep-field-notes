@@ -14,12 +14,18 @@
         {
             "source": "/pokemon-sleep/(.*)",
             "headers": [
-                { "key": "X-Content-Type-Options", "value": "nosniff" },
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
                 {
                     "key": "Referrer-Policy",
                     "value": "strict-origin-when-cross-origin"
                 }
             ]
         }
-    ]
+    ],
+    "framework": null,
+    "buildCommand": "node scripts/build_site.cjs",
+    "outputDirectory": "public-site"
 }
