@@ -1,0 +1,80 @@
+{
+  "captured_at": "2000-01-01",
+  "count": 1,
+  "records": [
+    {
+      "species": "Aggron",
+      "national_dex": 306,
+      "nickname": "Demo helper",
+      "level": 1,
+      "rp": null,
+      "xp_total": 0,
+      "xp_in_level": 0,
+      "xp_level_required": 54,
+      "xp_to_next_level": 54,
+      "nature": "Mild",
+      "original_nature": "Mild",
+      "nature_effects": {
+        "Ingredient finding": "up",
+        "Energy recovery": "down"
+      },
+      "nature_neutralized": false,
+      "berry": "Belue Berry",
+      "specialty": "Ingredients",
+      "shiny": false,
+      "favorite": false,
+      "id": "mon-1",
+      "met_date": null,
+      "met_area": null,
+      "variant": null,
+      "main_skill": {
+        "name": "Charge Energy S",
+        "level": 1,
+        "name_source": "species default checked against in-game details"
+      },
+      "ingredients": [
+        {
+          "name": "Bean Sausage",
+          "quantity": 2,
+          "unlock_level": 1,
+          "unlocked": true,
+          "empty": false
+        }
+      ],
+      "subskills": [
+        {
+          "name": "Helping Speed M",
+          "unlock_level": 10,
+          "unlocked": false,
+          "empty": false
+        },
+        {
+          "name": "Ingredient Finder M",
+          "unlock_level": 25,
+          "unlocked": false,
+          "empty": false
+        },
+        {
+          "name": "Inventory Up S",
+          "unlock_level": 50,
+          "unlocked": false,
+          "empty": false
+        },
+        {
+          "name": "Skill Trigger M",
+          "unlock_level": 70,
+          "unlocked": false,
+          "empty": false
+        },
+        {
+          "name": "Skill Trigger S",
+          "unlock_level": 80,
+          "unlocked": false,
+          "empty": false
+        }
+      ],
+      "review_reasons": [],
+      "needs_review": false
+    }
+  ]
+}

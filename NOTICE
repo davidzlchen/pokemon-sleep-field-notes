@@ -1,0 +1,15 @@
+Original code in this template is offered under the MIT license.
+
+Pokémon names, game reference tables, icons, and artwork remain the property of
+their respective owners. The MIT license does not grant rights to game assets,
+trademarks, or third-party datasets. Retain upstream attribution and review the
+terms of those sources for your own distribution/use.
+
+Sources reused from the original public site:
+- Pokémon / Pokémon Sleep game names and master reference data (master v134).
+- PokéAPI sprites: https://github.com/PokeAPI/sprites
+- Neroli's Lab species definitions/icons: https://github.com/nerolis-lab/nerolis-lab
+- RaenonX item images: https://pks.raenonx.cc/en/item/overview
+  File-level source URLs/checksums are in pokemon-sleep/assets/inventory-sources.json.
+
+No original account snapshot, session material, native binary, or CA is bundled.

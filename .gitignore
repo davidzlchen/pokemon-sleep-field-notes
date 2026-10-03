@@ -1,0 +1,15 @@
+.private/
+.research/
+.env*
+*.flows
+*.pem
+*.key
+*.apk
+*.apks
+*.so
+*.dat
+.venv/
+__pycache__/
+.vercel/
+node_modules/
+.DS_Store

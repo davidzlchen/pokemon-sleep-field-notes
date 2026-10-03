@@ -1,0 +1,3 @@
+# Optional, isolated capture tooling; not needed for demo/offline import.
+mitmproxy==12.2.3
+pyelftools==0.33
