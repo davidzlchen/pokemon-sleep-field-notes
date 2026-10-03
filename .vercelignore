@@ -1,7 +1,6 @@
 .git
 .private
 .research
-scripts
 docs
 .venv
 __pycache__

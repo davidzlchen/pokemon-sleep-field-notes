@@ -2,7 +2,7 @@
 
 Turn your own Pokémon Sleep collection into a searchable website with ingredients,
 subskills, XP progress, supplies, historical snapshots, and links to individual helpers.
-Built to be used with Claude Code or Codex. No frontend framework or build step required.
+Built to be used with Claude Code or Codex. No frontend framework or dependencies; Vercel publishes a public-only static build.
 
 **Start by giving your agent this prompt:**
 
@@ -18,9 +18,19 @@ alone.** You must supply your own decoded full snapshot, or complete the optiona
 phone capture steps. The capture path is experimental and tied to one exact
 v3.8.2 client revision; it is not an official Pokémon Sleep export API.
 
+## Host it on Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdavidzlchen%2Fpokemon-sleep-repository&project-name=my-pokemon-sleep&repository-name=my-pokemon-sleep)
+
+This opens Vercel’s setup flow to copy the template into your own Git account and
+host the fictional demo. Sign in, choose a repository name, and deploy. Then point
+Claude/Codex at **your new repository** to configure your name and import your own
+data. Push reviewed public exports to that repository to update the hosted site.
+The button does not connect to your game account or upload any credentials.
+
 ## Try it in one minute
 
-Requires Python 3.11+; Node.js is needed only for the JavaScript checks.
+Requires Python 3.11+; Node.js is needed for the JavaScript checks and deployment build.
 
 ```sh
 git clone https://github.com/davidzlchen/pokemon-sleep-repository.git
@@ -63,8 +73,9 @@ node scripts/test_sleep_search.cjs
 node scripts/test_sleep_assets.cjs
 ```
 
-Only publish the static site: `index.html` and `pokemon-sleep/`. Vercel's included
-ignore file excludes scripts, docs, and private working files from deployment.
+Only publish the static site: `index.html` and `pokemon-sleep/`. Vercel runs `node scripts/build_site.cjs` and serves only `public-site/`, which
+contains `index.html` and `pokemon-sleep/`. Scripts, docs, and private working
+files stay outside the hosted output.
 Any host supporting root-relative static paths works; GitHub Pages needs a custom
 root domain or paths adapted for a project subdirectory. Create a repository you
 own and review `git diff --cached` before publishing. See [agent instructions](AGENTS.md).
