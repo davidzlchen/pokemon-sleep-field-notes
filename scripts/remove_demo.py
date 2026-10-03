@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / 'pokemon-sleep'
-DEMO = '2000-01-01-52114943aa6c'
+DEMO = '2000-01-01-5170989bb826'
 
 def main():
     history = json.loads((ROOT / 'history.json').read_text())
